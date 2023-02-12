@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	r := router.Generate
+	r := router.Generate()
 
 	log.Fatal(http.ListenAndServe(":7000", r))
 }
